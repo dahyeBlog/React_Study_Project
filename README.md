@@ -15,13 +15,11 @@
 ```
 
 ## 사용한 도구 및 라이브러리
-- react, firebase
+- react, firebase v9
 - npm i styled-components
 - npm i react-router-dom@6.3.0
 
 ## 강의를 통해 배운 것
-- 프로필 사진의 업로드 및 삭제, 업데이트 기능
-
 ### 프로필 사진 저장하고, 저장된 사진 불러와 업데이트 하기
 ```bash 
 
@@ -81,9 +79,16 @@
       alert(error.message)
     }
   };
-
-
-
 ```
+
+### useEffect 의 return 기능 이란?
+-  만약 의존성이 있다면, clean-up이 매번 해당 useEffect가 실행되기 전에 실행된다. 
+
+### Private Router의 구현 v6
+- 반드시 인증(로그인)을 해야만 접근 가능한 페이지(프로필 페이지, 홈 화면 페이지)
+- 위와 같이 페이지의 구분이 생겼기에, 로그인 여부에 대해 체크 하는 역할을 해주는 Private Router를 구현함. 
+- 만약 로그인 하지 않았는데, 주소창으로 home 페이지나, 프로필 페이지로 가고자 한다면, 바로 로그인 페이지로 이동하도록 구현함.
+- https://www.robinwieruch.de/react-router-private-routes/
+
 
 
