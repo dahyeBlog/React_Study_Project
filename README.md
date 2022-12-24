@@ -18,6 +18,8 @@
 - react, firebase v9
 - npm i styled-components
 - npm i react-router-dom@6.3.0
+- npm i react-moment
+
 
 ## 강의를 통해 배운 것
 ### 프로필 사진 저장하고, 저장된 사진 불러와 업데이트 하기
@@ -91,4 +93,21 @@
 - https://www.robinwieruch.de/react-router-private-routes/
 
 
+### 이미지 전송하기 storage에 이미지 업로드하기
+   ```bash
+    let url;
+    if (img) {
+      const imgRef = ref(
+        storage,
+        `images/${new Date().getTime()} - ${img.name}`
+      );
+
+      const snap = await uploadBytes(imgRef, img);
+
+      // getDownloadURL 메서드를 호출하여 파일의 다운로드 url을 가져옴
+      const dlUrl = await getDownloadURL(ref(storage, snap.ref.fullPath));
+
+      url = dlUrl;
+    }
+    ```
 
