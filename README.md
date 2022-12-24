@@ -11,7 +11,30 @@
 
 ## 폴더 상세설명
 ```bash 
-
+src
+ ┣ components
+ ┃ ┣ svg
+ ┃ ┃ ┣ Attachment.js
+ ┃ ┃ ┣ Camera.js
+ ┃ ┃ ┗ Delete.js
+ ┃ ┣ Loading.js
+ ┃ ┣ Message.js
+ ┃ ┣ MessageForm.js
+ ┃ ┣ Navbar.js
+ ┃ ┣ PrivateRoute.js
+ ┃ ┗ User.js
+ ┣ context
+ ┃ ┗ auth.js
+ ┣ pages
+ ┃ ┣ Home.js
+ ┃ ┣ Login.js
+ ┃ ┣ Profile.js
+ ┃ ┗ Register.js
+ ┣ App.js
+ ┣ firebase.js
+ ┣ img.png
+ ┣ index.css
+ ┗ index.js
 ```
 
 ## 사용한 도구 및 라이브러리
